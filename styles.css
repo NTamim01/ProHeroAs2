@@ -1,0 +1,372 @@
+
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url('bg.png') no-repeat center center fixed;
+  background-size: cover;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  }
+  .nav-links .home {
+    color: #ff7b00;
+  }
+  
+  .nav-links .about {
+    color: #007bff; 
+  }
+  
+  .nav-links .facilities {
+    color: #00d2ff; 
+  }
+  
+  .nav-links .admission {
+    color: #8a2be2; 
+  }
+  
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  .logo img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+
+  .contact-btn {
+    background: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  
+  /* Banner */
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: none;
+  }
+  .banner-content {
+    max-width: 50%;
+  }
+  .banner-content h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  .highlight-orange {
+    color: #ff7b00;
+  }
+  .highlight-blue {
+    color: #007bff;
+  }
+  .banner-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  .enroll-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .banner-image {
+    max-width: 40%;
+  }
+  
+  /* Curriculum */
+  .curriculum-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .curriculum-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .curriculum-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+  }
+  
+  .card-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .curriculum-card.kinder {
+    background-color: #f0f9ff;
+  }
+  
+  .curriculum-card.elementary {
+    background-color: #fff5eb;
+  }
+  
+  .curriculum-card.middle {
+    background-color: #f8f0ff;
+  }
+  .card-image img {
+    max-width: 70%;
+  }
+  
+  .curriculum-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .curriculum-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .read-more {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .arrows {
+    margin-top: 20px;
+  }
+  .arrows button {
+    background: #ff9900;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Stories */
+  .our-stories {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .stories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .story {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .story.large {
+    grid-column: span 2;
+  }
+  
+  .story img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .story-content {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .story-content .date {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #bf6fb4;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+
+  .view-all {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+
+  
+  
+  /* Footer */
+  .footer {
+    background-color: #00aaff;
+    color: white;
+    padding: 20px 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  
+  /* List Styling */
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Icons */
+  .social-icons a img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+  
+
+  .icon {
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  
+  /* Mobile screen */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .banner {
+      flex-direction: column;
+      text-align: center;
+    }
+    .banner-content {
+      max-width: 100%;
+    }
+    .banner-image {
+      max-width: 100%;
+    }
+    .curriculum-section {
+      padding: 40px 15px;
+    }
+  
+    .section-title {
+      font-size: 1.75rem;
+    }
+  
+    .curriculum-card {
+      padding: 20px;
+    }
+  
+    .card-image {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .curriculum-card h3 {
+      font-size: 1.1rem;
+    }
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
